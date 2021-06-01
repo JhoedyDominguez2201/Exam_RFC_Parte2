@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exam_RFC</string>
+    <string name="nombre_s">Nombre(s):</string>
+    <string name="rfc">RFC</string>
+    <string name="apellido_materno">Apellido Materno:</string>
+    <string name="apellido_paterno">Apellido Paterno:</string>
+    <string name="dia">Dia</string>
+    <string name="mes">Mes</string>
+    <string name="a_o">Año</string>
+    <string name="calcular">Calcular</string>
+</resources>
