@@ -3,7 +3,9 @@ package com.example.exam_rfc
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.EditText
 import android.widget.Spinner
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +27,19 @@ class MainActivity : AppCompatActivity() {
         val adaptador_Año = ArrayAdapter(this,android.R.layout.simple_spinner_item,lista_Año)
         spinner_Año.adapter = adaptador_Año
 
+        fun generarRfc () {
+            val nombre = findViewById<EditText>(R.id.editText_Nombre)
+            val apellidoM = findViewById<EditText>(R.id.editText_ApellidoM)
+            val apellidoP = findViewById<EditText>(R.id.editText_ApellidoP)
+            var resultado = findViewById<TextView>(R.id.textView_Mostrar)
+            val dia = spinner_Dia.selectedItem.toString()
+            val mes = spinner_Mes.selectedItem.toString()
+            val año = spinner_Año.selectedItem.toString()
 
+            val rfc = nombre + apellidoP + apellidoM + dia + mes + año
 
+            resultado = rfc
+
+        }
     }
 }
